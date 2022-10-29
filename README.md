@@ -63,7 +63,7 @@ $ npm run test:cov
 1. npm i -g @nestjs/cli
 2. nest new project-name
 3. nest g module jogadores
-
+4. nest g module controller jogadores
 
 ## License
 
