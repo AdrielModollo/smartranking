@@ -11,7 +11,6 @@ export class JogadoresService {
     private readonly logger = new Logger(JogadoresService.name)
 
     async criarAtualizarJogador(criarJogadorDto: CriarJogadorDto): Promise<void> {
-        this.logger.log(`criarJogadorDto: ${criarJogadorDto}`)
         this.criar(criarJogadorDto)
     }
 
@@ -28,6 +27,7 @@ export class JogadoresService {
             urlFotoJogador: 'www.google.com.br/foto123.jpg'
         }
 
+        this.logger.log(`criarJogadorDto: ${JSON.stringify(jogador)}`)
         this.jogadores.push(jogador)
     }
 }
